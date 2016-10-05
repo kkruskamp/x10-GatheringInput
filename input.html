@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <title>Title</title>
     <script>
-      function clickOne(){
-      }
-      function clickTwo(){
+      function getName(){
+        var fullName = document.getElementById("first").value;
+        fullName = fullName + " " + document.getElementById("last").value;
+        document.getElementById("message").innerHTML = fullName;
+
       }
     </script>
   </head>
@@ -14,8 +16,8 @@
 
       <input type="text" id="first">
       <input type="text" id="last">
-
       <button type="button" id="doneButton" onclick="getName();">Done</button>
-    <p id="message">Counter: </p>
+
+    <p id="message"></p>
   </body>
 </html>
